@@ -13,13 +13,7 @@
  */
 class Vacancy_Controller  extends CI_Controller{
     
-    function index(){
-        $this->load->model('Vacancy');
-        $vacancy =  new Vacancy();
-        $array = $vacancy->getVacancyByUser(1);
-        $data["vacancies"] = $array;
-        $this->load->view('mainView',$data);
-    }
+    
 
     public function addVacancy() {
         $this->load->model('Vacancy');

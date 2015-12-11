@@ -33,11 +33,11 @@
                         <h3 class="panel-title">Please sign in to Hoyanna.lk</h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form" action="<?php echo site_url('vacancycontroller/index') ?>">
-                            <img class="img-responsive" style="" src="<?php echo base_url(); ?>/assets/img/loginCover.png" alt="Kasper Logo">
+                        <form role="form" action="<?php echo base_url(); ?>Role_Controller/redirectRole" method="POST">
+                            <img class="img-responsive" style="" src="<?php echo base_url(); ?>/assets/img/loginCover.png"  alt="Kasper Logo">
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" id="email" placeholder="E-mail" name="email" type="email" autofocus>
+                                    <input class="form-control" id="email" placeholder="User Name" name="userName" type="userName" autofocus>
                                 </div>
                                 <div class="form-group">
                                     <input class="form-control" id="password" placeholder="Password" name="password" type="password" value="">
