@@ -294,18 +294,18 @@
                             <div class="fact-icon">
                                 <i class="fa fa-check-square fa-lg"></i>
                             </div>
-                            <span data-to="120">0</span>
-                            <p>Completed Projects</p>
+                            <span data-to="150">0</span>
+                            <p>Opportunities</p>
                         </div>
                     </div>
                     
                     <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.8s">
                         <div class="fact-item text-center">
                             <div class="fact-icon">
-                                <i class="fa fa-users fa-lg"></i>                                    
+                                <i class="fa fa-trophy fa-lg"></i>
                             </div>
-                            <span data-to="152">0</span>
-                            <p>Satisfied Clients</p>
+                            <span data-to="18">0</span>
+                            <p>Successful Stories</p>
                         </div>
                     </div>
                     
@@ -314,18 +314,18 @@
                             <div class="fact-icon">
                                 <i class="fa fa-clock-o fa-lg"></i>
                             </div>
-                            <span data-to="2500">0</span>
-                            <p>Working Hours</p>
+                            <span data-to="51">0</span>
+                            <p>Product/Service Sellers</p>
                         </div>
                     </div>
                     
                     <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="1.3s">
                         <div class="fact-item text-center last">
                             <div class="fact-icon">
-                                <i class="fa fa-trophy fa-lg"></i>
+                                <i class="fa fa-users fa-lg"></i>
                             </div>
-                            <span data-to="150">0</span>
-                            <p>Award Won</p>
+                            <span data-to="157">0</span>
+                            <p>Subscribers</p>
                         </div>
                     </div>
 
@@ -371,15 +371,9 @@
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
                     <div class="pricing-table text-center">
                         <div class="price">
-                            <span class="plan">Basic</span>
-                            <span class="value"><small>$</small><strong>19</strong>/MO</span>
+                            <span class="plan">Bronze</span>
+                            <span class="value"><small>Rs.</small><strong>1900</strong>/MO</span>
                         </div>
-                        <ul class="text-center">
-                            <li>Feature N0 1</li>
-                            <li>Feature N0 2</li>
-                            <li>Feature N0 3</li>
-                            <li>Feature N0 4</li>
-                        </ul>
                         <a href="#" class="btn btn-price">Buy Now</a>
                     </div>
                 </div>
@@ -387,15 +381,10 @@
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="pricing-table text-center">
                         <div class="price">
-                            <span class="plan">Premium</span>
-                            <span class="value"><small>$</small><strong>29</strong>/MO</span>
+                            <span class="plan">Silver</span>
+                            <span class="value"><small>Rs.</small><strong>2900</strong>/MO</span>
                         </div>
-                        <ul class="text-center">
-                            <li>Feature N0 1</li>
-                            <li>Feature N0 2</li>
-                            <li>Feature N0 3</li>
-                            <li>Feature N0 4</li>
-                        </ul>
+
                         <a href="#" class="btn btn-price">Buy Now</a>
                     </div>
                 </div>
@@ -403,15 +392,10 @@
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="pricing-table text-center">
                         <div class="price">
-                            <span class="plan">Pro</span>
-                            <span class="value"><small>$</small><strong>39</strong>/MO</span>
+                            <span class="plan">Gold</span>
+                            <span class="value"><small>Rs.</small><strong>3900</strong>/MO</span>
                         </div>
-                        <ul class="text-center">
-                            <li>Feature N0 1</li>
-                            <li>Feature N0 2</li>
-                            <li>Feature N0 3</li>
-                            <li>Feature N0 4</li>
-                        </ul>
+
                         <a href="#" class="btn btn-price">Buy Now</a>
                     </div>
                 </div>
@@ -420,14 +404,9 @@
                     <div class="pricing-table text-center">
                         <div class="price">
                             <span class="plan">Platinum</span>
-                            <span class="value"><small>$</small><strong>49</strong>/MO</span>
+                            <span class="value"><small>Rs.</small><strong>4900</strong>/MO</span>
                         </div>
-                        <ul class="text-center">
-                            <li>Feature N0 1</li>
-                            <li>Feature N0 2</li>
-                            <li>Feature N0 3</li>
-                            <li>Feature N0 4</li>
-                        </ul>
+
                         <a href="#" class="btn btn-price">Buy Now</a>
                     </div>
                 </div>
