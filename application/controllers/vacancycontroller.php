@@ -21,10 +21,6 @@ class vacancycontroller  extends CI_Controller{
         $this->load->view('mainView',$data);
     }
 
-    
-
-
-
     public function addVacancy() {
         $this->load->model('vacancy');
         $vacancy = new vacancy();
