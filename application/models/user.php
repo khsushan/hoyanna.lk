@@ -11,7 +11,7 @@
  *
  * @author Ushan
  */
-class user extends my_model {
+class user extends MY_Model {
     
     const DB_TABLE = 'user';
     const DB_TABLE_PK = 'userid';
@@ -40,8 +40,8 @@ class user extends my_model {
     }
     
     function searchUserByUsename($username){
-        $query = $this->db->get_where('user', array('$' => $date),0, 0);
-        return $query->result_array();
+        $query = $this->db->get_where('user', array('username' => $username),0, 0);
+        return $query->result();
     }
     
     function login($username,$password){
