@@ -15,7 +15,7 @@ class Vacancy_Controller  extends CI_Controller{
     
     function index(){
         $this->load->model('Vacancy');
-        $vacancy =  new vacancy();
+        $vacancy =  new Vacancy();
         $array = $vacancy->getVacancyByUser(1);
         $data["vacancies"] = $array;
         $this->load->view('mainView',$data);
@@ -23,7 +23,7 @@ class Vacancy_Controller  extends CI_Controller{
 
     public function addVacancy() {
         $this->load->model('Vacancy');
-        $vacancy = new vacancy();
+        $vacancy = new Vacancy();
         $array = [];
         $array["name"] = "testing";//request name;
         $array["description"] = "test desc"; //request desc
@@ -35,25 +35,25 @@ class Vacancy_Controller  extends CI_Controller{
     
     function getVacancyTypes(){
         $this->load->model('VacancyType');
-        $vacancyType = new vacancytype();
+        $vacancyType = new VacancyType();
         $vacancyType->getVacancyTypes();
     }
     
     function getAllVacancy(){
         $this->load->model('Vacancy');
-        $vacancy =  new vacancy();
+        $vacancy =  new Vacancy();
         $vacancy->getAllVacancy();
     }
     
     function getVacancyByID(){
         $this->load->model('Vacancy');
-        $vacancy =  new vacancy();
+        $vacancy =  new Vacancy();
         $vacancy->getVacancyById(1);
     }
     
     function getVacancyByUserID(){
         $this->load->model('Vacancy');
-        $vacancy =  new vacancy();
+        $vacancy =  new Vacancy();
         $vacancy->getVacancyByUser(1);
         
     }
