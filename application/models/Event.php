@@ -11,7 +11,7 @@
  *
  * @author Ushan
  */
-class Event extends my_model {
+class Event extends My_Model {
 
     const DB_TABLE = 'event';
     const DB_TABLE_PK = 'id';
