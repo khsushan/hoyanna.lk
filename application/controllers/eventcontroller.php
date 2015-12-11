@@ -11,6 +11,12 @@
  *
  * @author Ushan
  */
-class eventcontroller {
+class eventcontroller extends CI_Controller{
     //put your code here
+    
+    function index(){
+         $this->load->model('event');
+         $event = new event();
+         $event->send_sms();
+    }
 }
