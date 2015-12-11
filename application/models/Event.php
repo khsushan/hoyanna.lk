@@ -82,9 +82,9 @@ class Event extends MY_Model{
 
 // Decode the response
         $responseData = json_decode($response, TRUE);
-
+        var_dump($responseData);
 // Print the date from the response
-        echo $responseData['published'];
+        //echo $responseData['published'];
     }
 
 }
