@@ -14,9 +14,10 @@
 class requestcontroller extends my_controller {
     //put your code here
     function getRequestByVacancyId(){
+        $elmId = $_POST['elmId'];
         $this->load->model('request');
         $request = new request();
-        $array = $request->getAllRequestByVacancy(1);
+        $array = $request->getAllRequestByVacancy($elmId);
         $data["requests"] = $array;
         return $data;
     }

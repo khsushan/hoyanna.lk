@@ -39,7 +39,8 @@
     <!-- Main Responsive -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/responsive.css">
 	
-	
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/fullcalendar.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/jquery-ui.css">
 	<!-- Modernizer Script for old Browsers -->
     <script src="<?php echo base_url(); ?>/assets/js/vendor/modernizr-2.6.2.min.js"></script>
 	
@@ -52,7 +53,7 @@
     ==================================== -->
     <header id="navigation" class="navbar-fixed-top animated-nav" style="background-color: rgb(0, 199, 252)">
         <div class="container">
-
+            
             <div class="navbar-header">
                 <!-- responsive nav button -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -98,62 +99,80 @@
     #about-us
     ========================== -->
     <section id="about-us">
-        <div class="container">
-            <div class="row" style="margin-top:20px">
-                
-                <div id="jobDetails" class="col-md-5 col-md-offset-1 wow fadeInLeft">
+            <div class="container">
+                <div class="row">
+                    
+                    <div id="jobDetails" class="col-md-5 col-md-offset-1 wow fadeInLeft">
 
                     <div class="subtitle text-center">
-                        <h3>Vaccancies</h3>
-                        <p>Vaccancies details.</p>
+                        <h4>Vacancies</h4>
+                        <p>Vacancies details.</p>
                     </div>
-                    
-                    <div id="testimonial" style="margin-top:-10px">
-                        <?php $vacancyIndex = 0;
+                            
+                    <div id="testimonial" style="margin-top:-50px">    
+                        <?php 
+                            $vacancyIndex = 1;
                             foreach ($vacancies as $vacancy):
-                            if($vacancyIndex % 1){ ?>
-                                <div class="tst-item clearfix" >
-                        <?php } ?>
-                            <a href="#" id="<?= $vacancy['id']; ?>">
-                                <img src="<?php echo base_url(); ?>/assets/img/client/1.png" alt="Client" class="img-circle">
-                                <div class="tst-content">
-                                    <p><?= $vacancy['description']; ?></p>
-                                    <p><?= $vacancy['date']; ?></p>
-                                    <p><?= $vacancy['username']; ?></p>
-                                    <p><?= $vacancy['type']; ?></p>
-                                    <span><?= $vacancy['name']; ?></span>
+                        ?>  
+                        <?php 
+                            if($vacancyIndex % 3 == 1):
+                                echo '<div class="tst-item clearfix">';
+                            endif;
+                        ?> 
+                            <a href="#" onclick="showVacancies(this)">                                
+                                <div class="tst-single clearfix" id="<?= $vacancy['id']; ?>">
+                                    <img src="<?php echo base_url(); ?>/assets/img/client/1.png" alt="Client" class="img-circle">
+                                    <div class="tst-content">
+                                        <p><b>Description </b> : <?= $vacancy['description']; ?></p>
+                                        <p><b>Date  </b> : <?= $vacancy['date']; ?></p>
+                                        <p><b>Vacancy Name </b>  : <?= $vacancy['name']; ?></p>
+                                        <p><b>Type </b>  : <?= $vacancy['type']; ?></p>
+                                        <span style="margin-top: 7px"> <b>User Name  </b> : <?= $vacancy['username']; ?></span>
+                                    </div>
                                 </div>
-                            </a> 
-                            <?php 
-                                if($vacancyIndex % 1){ ?>
-                                </div>
-                            <?php 
-                            } 
+                            </a>
+                        <?php 
+                            if($vacancyIndex % 3 == 0):
+                                echo "</div>";
+                            endif;
+                        ?> 
+                        
+                        <?php 
                             $vacancyIndex++;
                             endforeach; 
-                            ?>  
-                        
+                        ?>  
                     </div> <!-- end #testimonial -->
                 </div> <!-- end .col-md-5 -->
 
-                <div style="" id="jobDetailInfo" class="col-md-5 col-md-offset-1 wow fadeInRight">
+                <div class="col-md-5 col-md-offset-1 wow fadeInRight">
 
                     <div class="subtitle text-center">
-                        <h3>Job Details</h3>
-                        <p>Detail information.</p>
-                    </div>
-                    
-                    <div id="details" class="progress-bars" style="display:none">
-                        <h4>Name : Chamitha</h4>
-                        <h4>Tel : 0770388616</h4>
-                        <h4>Address : 75ads</h4>
+                        <h4>Vacancy Details</h3>
+                        <p>Detail Para.</p>
                     </div>
 
+                    <div class="progress-bars" id="requests" style="display: none; margin-left:60px ; margin-top: -40px">
+                                                                       
+                    </div>  <!-- progress-bars -->
                 </div>  <!-- end .col-md-5 -->
-
             </div>
         </div>
     </section>
+    
+    <section id="stats" style="margin-top: -150px">
+        <div class="container">
+            <hr>
+            <div class="row">
+                <div id="chart1" style="min-width: 310px; max-width: 1000px; height: 400px; margin: 0 auto; margin-bottom: 40px" class="chart1"></div>
+                </br>
+                <div id="chart2" style="min-width: 310px; max-width: 1000px; height: 400px; margin: 0 auto; margin-bottom: 40px" class="chart2"></div>
+                </br>
+                <div style="margin-left: 34.5%; margin-bottom: 15px; color: black"><h2>Upcoming Event Calendar</h2></div>
+                <div id='calendar' style="min-width: 310px;max-width: 1000px; height: 900px; margin: 0 auto; margin-bottom: -150px" class="calander"></div>
+            </div>
+        </div>
+    </section>
+    
     <!--
     End #about-us
     ========================== -->
@@ -191,7 +210,6 @@
     End #footer
     ========================== -->
 
-
     <!--
     JavaScripts
     ========================== -->
@@ -218,5 +236,41 @@
     <script src="<?php echo base_url(); ?>/assets/js/wow.min.js"></script>
     <!-- theme custom scripts -->
     <script src="<?php echo base_url(); ?>/assets/js/mainView.js"></script>
+    
+    <!-- theme custom scripts -->
+    <script src="<?php echo base_url(); ?>/assets/js/exporting.js"></script>
+    
+    <!-- theme custom scripts -->
+    <script src="<?php echo base_url(); ?>/assets/js/highcharts.js"></script>
+    
+    <!-- theme custom scripts -->
+    <script src="<?php echo base_url(); ?>/assets/js/jquery.fullcalendar.min.js"></script>
+    
+    <script>
+        function showVacancies(elements){
+            var elmId = elements.childNodes[1].id;
+
+            $.ajax({
+                url: "<?php echo base_url() ?>/requestcontroller/getRequestByVacancyId/", 
+                type: 'POST',
+                data: {'elmId': elmId},
+                success: function(result){
+                    $("#requests").empty();
+                    
+//                    for(var i = 0; i < 10 ; i++){
+//                     $("#requests").append(""<div class="tst-content">
+//                            <p><b>Description </b> : asdasd</p>
+//                            <p><b>Date  </b> : asdasd</p>
+//                            <p><b>Vacancy Name </b> asdasd</p>
+//                            <p><b>Type </b>  : asdasd</p>
+//                            <span style="margin-top: 7px"> <b>User Name  </b> : asdasd</span>
+//                        </div>  "")   
+//                    }
+                    
+                    $("#requests").show();
+                }
+            });
+        }
+    </script>
 </body>
 </html>
