@@ -24,7 +24,6 @@ class Vacancy_Controller  extends CI_Controller{
     public function addVacancy() {
         $this->load->model('Vacancy');
         $vacancy = new Vacancy();
-        $array = [];
         $array["name"] = "testing";//request name;
         $array["description"] = "test desc"; //request desc
         $array["typeid"] = 1; //request desc
