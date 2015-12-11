@@ -11,10 +11,10 @@
  *
  * @author Ushan
  */
-class vacancycontroller  extends CI_Controller{
+class Vacancy_Controller  extends CI_Controller{
     
     function index(){
-        $this->load->model('vacancy');
+        $this->load->model('Vacancy');
         $vacancy =  new vacancy();
         $array = $vacancy->getVacancyByUser(1);
         $data["vacancies"] = $array;
@@ -22,7 +22,7 @@ class vacancycontroller  extends CI_Controller{
     }
 
     public function addVacancy() {
-        $this->load->model('vacancy');
+        $this->load->model('Vacancy');
         $vacancy = new vacancy();
         $array = [];
         $array["name"] = "testing";//request name;
@@ -34,25 +34,25 @@ class vacancycontroller  extends CI_Controller{
     }
     
     function getVacancyTypes(){
-        $this->load->model('vacancytype');
+        $this->load->model('VacancyType');
         $vacancyType = new vacancytype();
         $vacancyType->getVacancyTypes();
     }
     
     function getAllVacancy(){
-        $this->load->model('vacancy');
+        $this->load->model('Vacancy');
         $vacancy =  new vacancy();
         $vacancy->getAllVacancy();
     }
     
     function getVacancyByID(){
-        $this->load->model('vacancy');
+        $this->load->model('Vacancy');
         $vacancy =  new vacancy();
         $vacancy->getVacancyById(1);
     }
     
     function getVacancyByUserID(){
-        $this->load->model('vacancy');
+        $this->load->model('Vacancy');
         $vacancy =  new vacancy();
         $vacancy->getVacancyByUser(1);
         
