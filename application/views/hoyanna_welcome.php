@@ -161,7 +161,7 @@
                 <div class="col-md-12">
                     <div class="section-title text-center wow fadeInDown">
                         <h2>Services</h2>    
-                        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+                        <p>Opportunities for your success.</p>
                     </div>
                 </div>
             </div>
@@ -173,8 +173,8 @@
                             <img src="<?php echo base_url(); ?>/assets/img/icons/monitor.png" class="media-object" alt="Monitor">
                         </a>
                         <div class="media-body">
-                            <h3>Vorem amet intuitive</h3>
-                            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
+                            <h3>Jobs and Opportunities.</h3>
+                            <p>We provide job opportunities, by connecting employers and employees we reduce the unemployment in the UVA province.</p>
                         </div>
                     </div>
 
@@ -186,8 +186,8 @@
                             <img src="<?php echo base_url(); ?>/assets/img/icons/cog.png" alt="Cog">
                         </a>
                         <div class="media-body">
-                            <h3>Vorem amet intuitive</h3>
-                            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
+                            <h3>Create Business Networks.</h3>
+                            <p>By providing the ability to meet the sellers and buyers in out new marketplace to sell their crops/products we creates new networks.</p>
                         </div>
                     </div>
                     
@@ -199,23 +199,13 @@
                             <img src="<?php echo base_url(); ?>/assets/img/icons/ruler.png" alt="Ruler">
                         </a>
                         <div class="media-body">
-                            <h3>Vorem amet intuitive</h3>
-                            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
+                            <h3>Events and Meetups.</h3>
+                            <p>Knowledge transferring sessions on carrier guidance, entrepreneurship, new methods and technologies etc.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="0.2s">
-                    <div class="media">
-                        <a href="#" class="pull-left">
-                            <img src="<?php echo base_url(); ?>/assets/img/icons/camera.png" alt="Camera">
-                        </a>
-                        <div class="media-body">
-                            <h3>Vorem amet intuitive</h3>
-                            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
-                        </div>
-                    </div>
-                </div>
+
 
             </div> <!-- end .row -->
         </div> <!-- end .container -->
@@ -365,7 +355,7 @@
 
                 <div class="section-title text-center wow fadeInUp">
                     <h2>Pricing</h2>    
-                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+                    <p>Opportunities for your success.</p>
                 </div>
 
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
