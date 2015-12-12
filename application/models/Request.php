@@ -49,8 +49,6 @@ class Request extends MY_Model {
         $this->db->join('user', 'user.userid = request.userid');
         $this->db->where('request.vacancyid',$vacancyid);
         $query = $this->db->get();
-//        $query = $this->db->get_where('request', array('vacancyid' => $vacancyid),0, 0);
-//        var_dump($query->result_array());
         var_dump($query->result_array());
         return $query->result_array();
     }
