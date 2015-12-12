@@ -44,7 +44,16 @@ class Event extends MY_Model{
     }
 
     function getAllEventByUser($userid) {
-        $query = $this->db->get_where('event', array('$userid' => $userid), 0, 0);
+//        $query = $this->db->get_where('event', array('$userid' => $userid), 0, 0);
+//        return $query->result_array();
+        
+        $this->db->select('event.id ,event.name,event.location,event.date,event.starttime,event.endtime,user.username');
+        //For determine one or more tables to select from 
+        $this->db->from('event');
+        //For joining with another table, table name as first argument and condition string as second argument
+        $this->db->join('user', 'user.userid = event.userid');
+        $this->db->where('event.userid',$userid);
+        $query = $this->db->get();
         return $query->result_array();
     }
 
