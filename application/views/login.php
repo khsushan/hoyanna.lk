@@ -37,7 +37,7 @@
                             <img class="img-responsive" style="" src="<?php echo base_url(); ?>/assets/img/loginCover.png"  alt="Kasper Logo">
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" id="email" placeholder="User Name" name="userName" type="userName" autofocus>
+                                    <input class="form-control" id="userName" placeholder="User Name" name="userName" type="userName" autofocus>
                                 </div>
                                 <div class="form-group">
                                     <input class="form-control" id="password" placeholder="Password" name="password" type="password" value="">
