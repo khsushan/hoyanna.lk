@@ -28,7 +28,11 @@ class Role_Controller extends CI_Controller {
             $data["vacancies"] = $array;
             $this->load->view('mainView', $data);
         } else if (($results[0]->userid) == 2) {
-            $this->load->view('employerView');
+            $this->load->model('Vacancy');
+            $vacancy = new Vacancy();
+            $array = $vacancy->getVacancyByUser($results[0]->userid);
+            $data["vacancies"] = $array;
+            $this->load->view('employerView', $data);
         } else if (($results[0]->userid) == 3) {
             $this->load->view('organizerview');
         }
