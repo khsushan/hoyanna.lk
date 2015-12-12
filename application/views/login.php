@@ -24,7 +24,7 @@
     <link href="<?php echo base_url(); ?>/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 
-<body style="background-color:#fcf8e3">
+<body background="http://localhost:9080/hoyanna.lk-1/assets/img/slider/bg1.jpg">
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
@@ -49,7 +49,7 @@
                                 </div>
                                 
                                 <!-- Change this to a button or input when using this as a form -->
-                                <button id="loginSubmit" type="submit" class="btn btn-lg btn-success btn-block">Login</button>
+                                <button id="loginSubmit" type="submit" class="btn btn-lg btn-primary btn-block">Login</button>
                             </fieldset>                            
                         </form>
                     </div>
