@@ -102,7 +102,7 @@
 
                     <div class="subtitle text-center">
                         <h4>Vacancies</h4>
-                        <p>Vacancies details.</p>
+                        <p>Vacancy Details.</p>
                     </div>
 
                     <div id="testimonial" style="margin-top:-50px">    
