@@ -143,8 +143,8 @@
                 <div class="col-md-5 col-md-offset-1 wow fadeInRight">
 
                     <div class="subtitle text-center">
-                        <h4>Vacancy Details</h3>
-                            <p>Detail Para.</p>
+                        <h4>Responses</h3>
+                            <p>Response Details.</p>
                     </div>
 
                     <div class="progress-bars" id="requests1" style="color:black;display:none;margin-left:60px ; margin-top: -40px">
@@ -161,18 +161,21 @@
                         <h5><b>NIC   : </b>923226863v</h5><br>
 
                         <hr>
-
-                        <h5><b>Name  : </b>Nilupul liyanage</h5> <br>
-                        <h5><b>Email : </b>Nilupul@gmail.com</h5><br>
-                        <h5><b>Tel   : </b>0752385616</h5><br>
-                        <h5><b>NIC   : </b>9234225253v</h5><br>
-                    </div>  <!-- progress-bars -->
-
-                    <div class="progress-bars" id="requests2" style="color:black;display:none;margin-left:60px ; margin-top: -40px">
                         <h5><b>Name  : </b>ershadi jayathileka</h5> <br>
                         <h5><b>Email : </b>ershadi@gmail.com</h5><br>
                         <h5><b>Tel   : </b>0710323616</h5><br>
                         <h5><b>NIC   : </b>924521563v</h5><br>
+
+
+
+                    </div>  <!-- progress-bars -->
+
+                    <div class="progress-bars" id="requests2" style="color:black;display:none;margin-left:60px ; margin-top: -40px">
+                        <h5><b>Name  : </b>Nilupul liyanage</h5> <br>
+                        <h5><b>Email : </b>Nilupul@gmail.com</h5><br>
+                        <h5><b>Tel   : </b>0752385616</h5><br>
+                        <h5><b>NIC   : </b>9234225253v</h5><br>
+
 
                         <hr>
 
