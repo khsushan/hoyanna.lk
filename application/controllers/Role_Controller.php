@@ -18,7 +18,7 @@ class Role_Controller extends CI_Controller {
         $userName = $this->input->post('userName');
         $password = $this->input->post('password');
 
-        $this->load->model('user');
+        $this->load->model('User');
         $user = new user();
         $results = $user->searchUserByUsename($userName);
         if (($results[0]->userid) == 1) {
