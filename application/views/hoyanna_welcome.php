@@ -108,31 +108,13 @@
 
             <div class="carousel-inner">
 
-                <div class="item active"  style="background-image: url('<?php echo base_url(); ?>/assets/img/slider/bg2.jpg')" >
-                    <div class="carousel-caption">
-                        <div class="animated bounceInRight">
-                            <h2>sample 1</h2>
-                            <p>para 1.</p>
-                        </div>
-                    </div>
+                <div class="item active"  style="background-image: url('<?php echo base_url(); ?>/assets/img/slider/bg1.jpg')" >
                 </div>              
 
-                <div class="item" style="background-image: url('<?php echo base_url(); ?>/assets/img/slider/bg2.jpg')">                
-                    <div class="carousel-caption">
-                        <div class="animated bounceInDown">
-                            <h2>Sample 2 </h2>
-                            <p>para 2.</p>
-                        </div>
-                    </div>
+                <div class="item" style="background-image: url('<?php echo base_url(); ?>/assets/img/slider/bg2.jpg')">  
                 </div>
 
-                <div class="item" style="background-image: url('<?php echo base_url(); ?>/assets/img/slider/bg3.jpg')">                 
-                     <div class="carousel-caption">
-                        <div class="animated bounceInUp">
-                            <h2>sample 3</h2>
-                            <p>para 3.</p>
-                        </div>
-                    </div>
+                <div class="item" style="background-image: url('<?php echo base_url(); ?>/assets/img/slider/bg3.png')"> 
                 </div>
             </div>
             <!--/.carousel-inner-->
@@ -218,34 +200,18 @@
     #service-bottom
     ========================== -->
     
-    <section id="service-bottom">
+    <section id="service-bottom" style="height: 350px">
         <div class="container">
                 <div class="mobile-device">
-                   <img data-wow-delay="0.2s" class="img-responsive black  wow fadeInLeftBig" src="<?php echo base_url(); ?>/assets/img/icons/iphone-black.png" alt="iPhone Black">
-                    <img data-wow-delay="0.5s" class="img-responsive white  wow fadeInLeftBig" src="<?php echo base_url(); ?>/assets/img/icons/iphone-white.png" alt="iPhone White">
+                    <img style="margin-top: -80px" data-wow-delay="0.2s" class="img-responsive black  wow fadeInLeftBig" src="<?php echo base_url(); ?>/assets/img/icons/jobs.png" alt="iPhone Black">
                 </div>
             <div class="service-features wow fadeInRight">
-                <h3>OUR DESIGNS COMES WITH...</h3>
-                <ul>
-                    <li>Responsive Design</li>
-                    <li>Modern And Clean Design</li>
-                    <li>Clean Code</li>
-                    <li>Browser Friendly</li>
-                </ul>
+                <h3>Always Gives More That What <br><br>People Expect To Get...</h3>
             </div>
         </div>
     </section>
     <!--
     End #service-bottom
-    ========================== -->
-
-
-    <!--
-    #Portfolio
-    ========================== -->
-    
-    <!--
-    End #Portfolio
     ========================== -->
 
     <!--
@@ -261,7 +227,9 @@
                 </div>
                 
                 <div class="about-us text-center wow fadeInDown" style="margin-top: -40px">
-                    <h5></h5>
+                    <h4>We are leading provider of modern communication and collaboration solutions for business. Our products apply powerful technology that helps employees, partners and customers work better together.
+
+Inside companies, enterprise networks dramatically improve employee productivity, alignment and innovation. Externally, supports vibrant customer and partner communities that drive higher sales, better service and greater satisfaction. Millions of users and many of the world’s most successful companies rely on day in and day out to get work done, delight their customers and stay ahead of their competitors. </h4>
                     <h5></h5>
                     <img style="width: 400px; height: 120px" src="<?php echo base_url(); ?>assets/img/cover.png" alt="About Us" class="img-responsive">
                 </div>
