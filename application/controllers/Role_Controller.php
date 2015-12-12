@@ -34,7 +34,11 @@ class Role_Controller extends CI_Controller {
             $data["vacancies"] = $array;
             $this->load->view('employerView', $data);
         } else if (($results[0]->userid) == 3) {
-            $this->load->view('organizerview');
+            $this->load->model('Event');
+            $event= new Event();
+            $array = $event->getAllEventByUser(($results[0]->userid));
+            $data["events"] = $array;
+            $this->load->view('organizerview',$data);
         }
     }
 
