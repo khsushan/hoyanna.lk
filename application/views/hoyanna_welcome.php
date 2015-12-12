@@ -251,17 +251,19 @@
     <!--
     #about
     ========================== -->
-    <section id="about">
+    <section id="about" style="margin-top: -40px">
         <div class="container">
             <div class="row">
 
                 <div class="section-title text-center wow fadeInUp">
                     <h2>About Us</h2>    
-                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+                    <p></p>
                 </div>
                 
-                <div class="about-us text-center wow fadeInDown">
-                    <img src="<?php echo base_url(); ?>/assets/img/about.png" alt="About Us" class="img-responsive">
+                <div class="about-us text-center wow fadeInDown" style="margin-top: -40px">
+                    <h5></h5>
+                    <h5></h5>
+                    <img style="width: 400px; height: 120px" src="<?php echo base_url(); ?>assets/img/cover.png" alt="About Us" class="img-responsive">
                 </div>
             </div>
         </div>
@@ -330,13 +332,12 @@
     <!--
     #quotes
     ========================== -->
-    <section id="quotes">
+    <section id="quotes" style="height: 50px">
         <div class="container">
             <div class="row wow zoomIn">
                 <div class="col-lg-12">
                     <div class="call-to-action text-center">
-                        <p>“ACCUMSAN ID CURABITUR ET PORTITOR MAURIS BLANDIT DOLOR LOREM SOME EST OUR DONEC STIN LORTIOS”</p>
-                        <span>John Doe</span>
+                        <p>“Opportunities for Your Success..”</p>
                     </div>
                 </div>
             </div>
@@ -401,14 +402,6 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12 wow fadeInUp">
-                    <div class="special-plan text-center">
-                        <p>Contact us if you have special request</p>
-                        <a href="#" class="btn btn-blue">Contact Us</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <!--
@@ -432,7 +425,7 @@
                 </div>
 
                 <div class="col-md-4 text-left wow fadeInRight">
-                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blan dit aliquet elit, eget tincidunt.</p>
+                    <p>Subscribe Us for Monthly News Letters.</p>
                 </div>
             </div>
         </div>
@@ -451,7 +444,7 @@
 
                 <div class="section-title text-center wow fadeInDown">
                     <h2>Contact Us</h2>
-                    <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+                    <p>Keep in touch with us for the new updates...</p>
                 </div>
                 
                 <div class="col-md-8 col-sm-9 wow fadeInLeft">
@@ -474,12 +467,12 @@
                 <div class="col-md-4 col-sm-3 wow fadeInRight">
                     <div class="contact-details">
                         <span>GET IN TOUCH</span>
-                        <p>+00 123.456.789 <br> <br> +00 123.456.789</p>
+                        <p>+94 754 543742 <br> <br> +94 715 547461</p>
                     </div> <!-- end .contact-details -->
 
                     <div class="contact-details">
                         <span>GET IN TOUCH</span>
-                        <p>+00 123.456.789 <br> <br> +00 123.456.789</p>
+                        <p>+94 754 634603 <br> <br> +94 770 388616</p>
                     </div> <!-- end .contact-details -->
                 </div> <!-- .col-md-4 -->
 
